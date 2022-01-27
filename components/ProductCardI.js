@@ -1,5 +1,3 @@
-import Image from "next/Image";
-
 import maca01 from "../Picture/maca/maca01.jpg";
 import maca02 from "../Picture/maca/macabox1.jpg";
 import maca03 from "../Picture/maca/macabox3.jpg";
@@ -11,6 +9,7 @@ import beef01 from "../Picture/beef/beef01.jpg";
 import beef03 from "../Picture/beef/beef03.jpg";
 
 import rown05 from "../Picture/rown/rown05.jpg";
+import Image from "next/image";
 
 function ProductCardI() {
   const products = [
@@ -67,7 +66,8 @@ function ProductCardI() {
             src={product.image}
             height={300}
             width={300}
-            objectFit="contain"
+            className="object-contain"
+            alt={product.image}
           />
 
           <h4 className="my-3">{product.name}</h4>

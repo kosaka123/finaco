@@ -1,13 +1,14 @@
-import { france01 } from "../Picture/france/1box.jpg";
-import { france02 } from "../Picture/france/3box.jpg";
-import { france03 } from "../Picture/france/5box.jpg";
+import Image from "next/image";
+import france01 from "../Picture/france/1box.jpg";
+import france02 from "../Picture/france/3box.jpg";
+import france03 from "../Picture/france/5box.jpg";
 
-import { maca01 } from "../Picture/maca/maca01.jpg";
-import { maca02 } from "../Picture/maca/macabox1.jpg";
-import { maca03 } from "../Picture/maca/macabox3.jpg";
+import maca01 from "../Picture/maca/maca01.jpg";
+import maca02 from "../Picture/maca/macabox1.jpg";
+import maca03 from "../Picture/maca/macabox3.jpg";
 
-import { stone01 } from "../Picture/stone/stone1.jpg";
-import { stone03 } from "../Picture/stone/stone3.jpg";
+import stone01 from "../Picture/stone/stone1.jpg";
+import stone03 from "../Picture/stone/stone3.jpg";
 
 function ProductCard() {
   const products = [
@@ -60,7 +61,7 @@ function ProductCard() {
           key={i}
           className=" flex flex-col m-5 bg-white z-30 p-10 shadow-lg hover:scale-105 transform transition duration-500 "
         >
-          <img
+          <Image
             src={product.image}
             height={300}
             width={300}
