@@ -6,9 +6,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
+    "@heroicons/react": "^1.0.5",
+    "axios": "^0.24.0",
+    "emailjs": "^3.7.0",
+    "emailjs-com": "^3.2.0",
+    "google-map-react": "^2.1.10",
+    "i": "^0.3.7",
+    "leaflet": "^1.7.1",
+    "leaflet-defaulticon-compatibility": "^0.1.1",
+    "leaflet-geosearch": "^3.6.0",
     "next": "latest",
+    "npm": "^8.3.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-facebook-sdk": "^1.1.1",
+    "react-leaflet": "^3.2.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
