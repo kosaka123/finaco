@@ -95,7 +95,7 @@ function PublicitySlider() {
       <div className="w-full text-center text-6xl font-bold tracking-normal">
         <p>最新資訊</p>
       </div>
-      <div className="relative flex justify-center w-full lg:h-[710px] sm:h-[800px] sm:mt-10">
+      <div className="relative flex justify-center w-full mb-3 lg:h-[710px] sm:h-[800px] sm:mt-10">
         <div className="flex justify-between relative w-3/4 border-8  overflow-hidden border-gray-200 rounded-xl shadow-xl">
           <button
             className="h-full z-20 w-5 text-white bg-gray-300 opacity-20 hover:opacity-80 font-extrabold text-3xl transform transition duration-300 ease-out"

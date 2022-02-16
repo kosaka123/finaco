@@ -21,9 +21,9 @@ function Navbar() {
   // });
 
   return (
-    <nav className="flex items-center bg-transparent p-3 flex-wrap sticky top-0 z-50  bg-green-700">
+    <nav className="flex items-center bg-transparent h-15  flex-wrap sticky top-0 z-50 bg-green-700">
       <Link href="/">
-        <a className="p-2 mr-4 inline-flex items-center">
+        <a className="p-2 ml-5 inline-flex items-center">
           <img
             src="logo.png"
             alt={Logo}
@@ -49,7 +49,7 @@ function Navbar() {
           isMenuVisible ? "max-h-full" : "h-0"
         }  w-full lg:h-full lg:inline-flex lg:flex-grow lg:w-auto overflow-hidden`}
       >
-        <div className="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col">
+        <div className="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col mr-3">
           <Link href="/about">
             <a className="sm:text-4xl lg:text-xl lg:inline-flex lg:w-auto px-3 p-2 rounded text-gray-400 hover:text-white text-lg">
               <span>關於樺齡</span>

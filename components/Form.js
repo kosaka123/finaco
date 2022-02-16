@@ -188,7 +188,7 @@ function Form() {
           onChange={(e) => {
             setMessage(e.target.value);
           }}
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500 h-28"
         ></textarea>
         {errors?.message && (
           <p className="text-red-500">Message body cannot be empty.</p>

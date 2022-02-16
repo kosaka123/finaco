@@ -25,7 +25,7 @@ export default function Home() {
               <FacebookData />
             </div>
 
-            <div className="lg:w-1/2  sm:w-full sm:mx-auto">
+            <div className="xl:w-1/2 xl:mb-32 sm:w-full sm:mx-auto">
               <PublicitySlider />
             </div>
           </div>

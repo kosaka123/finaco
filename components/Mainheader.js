@@ -91,11 +91,7 @@ function Mainheaders() {
       </div>
 
       <div className="w-full h-3/4">
-        <img
-          src="https://previews.123rf.com/images/pakhnyushchyy/pakhnyushchyy1112/pakhnyushchyy111200149/11526094-green-forest-background-in-a-sunny-day.jpg"
-          alt=""
-          className="w-full lg:h-[800px] object-fill"
-        />
+        <img src="bg.jpg" alt="" className="w-full lg:h-[800px] object-fill" />
       </div>
     </div>
   );
