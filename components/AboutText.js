@@ -1,6 +1,6 @@
 function AboutText() {
   return (
-    <div className="w-full md:w-6/12 px-4  flex items-center">
+    <div className="w-full md:w-6/12 px-4  flex items-center animate-fade-in-down">
       <div className="w-full">
         <div className="w-full flex flex-col my-auto">
           <div className="w-full flex-auto">

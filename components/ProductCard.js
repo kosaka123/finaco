@@ -63,7 +63,7 @@ function ProductCard() {
   ];
 
   return (
-    <div className="w-full h-full grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  mx-auto ">
+    <div className="w-full h-full grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
       {products.map((product, i) => (
         <div
           key={i}

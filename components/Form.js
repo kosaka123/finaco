@@ -6,7 +6,7 @@ function Form() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [address, setAddress] = useState("");
+  // const [address, setAddress] = useState("");
 
   //   Form validation
   const [errors, setErrors] = useState({});
@@ -82,12 +82,12 @@ function Form() {
       setEmail("");
       setMessage("");
       setSubject("");
-      setAddress("");
+      // setAddress("");
     }
   };
 
   return (
-    <div className=" w-1/3">
+    <div className="w-3/4 ">
       <form
         ref={form}
         onSubmit={handleSubmit}
@@ -98,7 +98,7 @@ function Form() {
         {/*FullName */}
         <label
           htmlFor="fullname"
-          className="text-gray-500 font-light mt-8 dark:text-gray-50"
+          className="text-black font-light mt-8 dark:text-gray-50"
         >
           名字<span className="text-red-500 dark:text-gray-50">*</span>
         </label>
@@ -109,16 +109,17 @@ function Form() {
             setFullname(e.target.value);
           }}
           name="fullname"
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          placeholder="Name"
+          className="bg-transparent border-b py-2 pl-4  focus:outline-none focus:rounded-md focus:ring-1 ring-gray-600 font-light text-black mt-1"
         />
         {errors?.fullname && (
           <p className="text-red-500">Fullname cannot be empty.</p>
         )}
 
         {/*address */}
-        <label
+        {/* <label
           htmlFor="address"
-          className="text-gray-500 font-light mt-8 dark:text-gray-50"
+          className= text-black mt-1 font-light mt-8 dark:text-gray-50"
         >
           地址<span className="text-red-500 dark:text-gray-50">*</span>
         </label>
@@ -129,16 +130,16 @@ function Form() {
             setAddress(e.target.value);
           }}
           name="address"
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-600 font-light text-black mt-1"
         />
         {errors?.address && (
           <p className="text-red-500">Fullname cannot be empty.</p>
-        )}
+        )} */}
 
         {/*email */}
         <label
           htmlFor="email"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
+          className="text-black font-light mt-4 dark:text-gray-50"
         >
           E-mail<span className="text-red-500">*</span>
         </label>
@@ -146,10 +147,11 @@ function Form() {
           type="email"
           name="email"
           value={email}
+          placeholder="E-mail"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-600 font-light text-black mt-1"
         />
         {errors?.email && (
           <p className="text-red-500">Email cannot be empty.</p>
@@ -158,7 +160,7 @@ function Form() {
         {/*Subject */}
         <label
           htmlFor="subject"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
+          className="text-black font-light mt-4 dark:text-gray-50"
         >
           標題<span className="text-red-500">*</span>
         </label>
@@ -166,10 +168,11 @@ function Form() {
           type="text"
           name="subject"
           value={subject}
+          placeholder="Poduct Type"
           onChange={(e) => {
             setSubject(e.target.value);
           }}
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-600 font-light text-black mt-1"
         />
         {errors?.subject && (
           <p className="text-red-500">Subject cannot be empty.</p>
@@ -178,17 +181,18 @@ function Form() {
         {/*Message */}
         <label
           htmlFor="message"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
+          className="text-black font-light mt-4 dark:text-gray-50"
         >
           意見<span className="text-red-500">*</span>
         </label>
         <textarea
           name="message"
           value={message}
+          placeholder="Advice......"
           onChange={(e) => {
             setMessage(e.target.value);
           }}
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500 h-28"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-600 font-light text-black mt-1 h-28"
         ></textarea>
         {errors?.message && (
           <p className="text-red-500">Message body cannot be empty.</p>

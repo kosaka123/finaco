@@ -2,7 +2,7 @@ import ProductCardI from "./ProductCardI";
 
 function ProductI() {
   return (
-    <div>
+    <div className=" animate-scale-up">
       <ProductCardI />
     </div>
   );
