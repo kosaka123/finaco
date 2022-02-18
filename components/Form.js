@@ -93,7 +93,7 @@ function Form() {
         onSubmit={handleSubmit}
         className=" flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
       >
-        <h1 className="text-4xl font-bold  dark:text-gray-50">請給些意見</h1>
+        <h1 className="text-4xl font-bold  dark:text-gray-50">意見箱</h1>
 
         {/*FullName */}
         <label

@@ -13,16 +13,31 @@ function contact() {
     ssr: false,
   });
   return (
-    <div className="w-full h-full bg-gray-50">
+    <div className="w-full h-full bg-gray-100">
       <Navbar />
 
       <div className="w-full flex justify-center">
-        <div className="w-4/5 bg-white border-white rounded-lg border-8 shadow-xl absolute z-40 sm:grid sm:grid-cols-1 xl:mt-20">
-          <div className="w-full ">
-            <div className="flex justify-center">
-              <h1 className="text-4xl font-bold text-center text-green-700 border-b-2  dark:text-gray-50">
-                Get In Touch
-              </h1>
+        <div className="w-4/5  absolute z-40 sm:grid sm:grid-cols-1 xl:mt-14 sm:mt-5 bg-white border-white rounded-lg  shadow-xl">
+          <div
+            className="w-full h-[250px] rounded-t-lg opacity-80 bg-cover flex justify-center"
+            style={{ backgroundImage: "url(get.jpg)" }}
+          >
+            <div className="w-3/5 h-4/5 bg-white lg:mt-6 bg-opacity-50 rounded-lg">
+              <div className="flex justify-center lg:mt-5 sm:mt-8">
+                <h1 className="lg:text-6xl  sm:text-5xl font-bold text-center text-green-700   ">
+                  Get In Touch!
+                </h1>
+              </div>
+              <div className="flex justify-center lg:mt-2 sm:mt-5">
+                <p className="lg:text-3xl sm:text-lg text-center text-black  ">
+                  For more info or inqury about our product and pricing
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <p className="lg:text-3xl sm:text-lg l text-center text-black  ">
+                  please feel free to get in touch with us.
+                </p>
+              </div>
             </div>
           </div>
           <div className="w-full flex justify-center ">
@@ -33,8 +48,8 @@ function contact() {
               </div>
 
               {/*information */}
-              <div className=" flex h-full xl:w-2/5  sm:w-full lg:justify-start lg:items-center sm:justify-center sm:mt-3 ">
-                <div className="w-4/5  h-full sm:h-[600px] sm:grid sm:grid-cols-1">
+              <div className=" flex h-full xl:w-2/5  sm:w-full lg:justify-start lg:items-center sm:justify-center sm:mt-3 sm:h-[600px]">
+                <div className="w-4/5  h-full sm:grid sm:grid-cols-1">
                   <div className="w-full  h-1/2  border-white border-8 ">
                     <div className="flex justify-center items-center mt-8 w-full  text-gray-600 dark:text-gray-400">
                       <LocationMarkerIcon className="w-12 h-12 text-gray-500" />
@@ -68,10 +83,16 @@ function contact() {
         </div>
       </div>
 
-      <div className="w-full h-1/2 relative">
-        <div className="w-full lg:h-[450px]  bg-gradient-to-r from-green-700 via-greeb-600 to-green-500" />
+      <div className="w-full lg:h-1/2 sm:h-[1500px] relative">
+        <div className="w-full h-full">
+          <img
+            alt="conta"
+            src="conta.jpg"
+            className="w-full lg:h-full sm:h-[1500px] opacity-80"
+          />
+        </div>
       </div>
-      <div className="w-full xl:mt-80 sm:mt-40">
+      <div className="w-full h-full lg:mt-0 ">
         <Footer />
       </div>
     </div>

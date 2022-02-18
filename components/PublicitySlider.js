@@ -92,10 +92,10 @@ function PublicitySlider() {
 
   return (
     <>
-      <div className="w-full text-center text-6xl font-bold tracking-normal">
+      <div className="w-full text-center text-6xl font-bold tracking-normal xl:-mt-2 sm:mt-10">
         <p>最新資訊</p>
       </div>
-      <div className="relative flex justify-center w-full mb-3 lg:h-[710px] sm:h-[800px] sm:mt-10">
+      <div className="relative flex justify-center w-full lg:mt-5 lg:h-[710px] sm:h-[800px] sm:mt-2">
         <div className="flex justify-between relative w-3/4 border-8  overflow-hidden border-gray-200 rounded-xl shadow-xl">
           <button
             className="h-full z-20 w-5 text-white bg-gray-300 opacity-20 hover:opacity-80 font-extrabold text-3xl transform transition duration-300 ease-out"
@@ -140,8 +140,8 @@ function PublicitySlider() {
               onClick={() => moveDot(i)}
               className={
                 index === i
-                  ? " w-4 h-4 rounded-full ml-2 text-center z-50  bg-black border-2 border-white cursor-pointer"
-                  : "w-4 h-4 rounded-full ml-2 text-center z-50  border-2 border-white cursor-pointer"
+                  ? " w-6 h-6 rounded-full ml-2 text-center z-50  bg-black border-4 border-white cursor-pointer"
+                  : "w-6 h-6 rounded-full ml-2 text-center z-50  border-4 border-white cursor-pointer"
               }
             ></div>
           ))}

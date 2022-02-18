@@ -103,10 +103,10 @@ function Slider() {
 
   return (
     <>
-      <div className="w-full text-center text-6xl font-bold tracking-normal">
+      <div className="w-full text-center text-6xl font-bold tracking-normal sm:mb-4">
         <p>熱銷產品</p>
       </div>
-      <div className="flex relative justify-center mt-5 lg:h-1/2 lg:w-1/2 lg:mx-auto sm:mb-10">
+      <div className="flex relative justify-center lg:mt-5 lg:h-1/2 lg:w-1/2 lg:mx-auto sm:mb-10">
         <div className="flex justify-between relative sm:w-full w-2/3 border-8 h-80 overflow-hidden border-gray-200 rounded-xl shadow-xl">
           <button
             className="h-full z-20 w-5 text-white bg-gray-300 opacity-20 hover:opacity-80 font-extrabold text-3xl transform transition duration-300 ease-out"
@@ -153,8 +153,8 @@ function Slider() {
               onClick={() => moveDot(i)}
               className={
                 index === i
-                  ? " w-4 h-4 rounded-full ml-2 text-center z-50  bg-black border-2 border-white cursor-pointer"
-                  : "w-4 h-4 rounded-full ml-2 text-center z-50  border-2 border-white cursor-pointer"
+                  ? " w-6 h-6 rounded-full ml-2 text-center z-50  bg-black border-4 border-white cursor-pointer mb-2"
+                  : "w-6 h-6 rounded-full ml-2 text-center z-50  border-4 border-white cursor-pointer mb-2"
               }
             ></div>
           ))}
