@@ -153,8 +153,8 @@ function Slider() {
               onClick={() => moveDot(i)}
               className={
                 index === i
-                  ? " w-6 h-6 rounded-full ml-2 text-center z-50  bg-black border-4 border-white cursor-pointer mb-2"
-                  : "w-6 h-6 rounded-full ml-2 text-center z-50  border-4 border-white cursor-pointer mb-2"
+                  ? " w-6 h-6 rounded-full ml-2 text-center z-40  bg-black border-4 border-white cursor-pointer mb-2"
+                  : "w-6 h-6 rounded-full ml-2 text-center z-40  border-4 border-white cursor-pointer mb-2"
               }
             ></div>
           ))}

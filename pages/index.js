@@ -1,5 +1,5 @@
 import Head from "next/head";
-import FacebookData from "../components/FacebookData";
+import HomeFBData from "../components/HomeFBData";
 import Footer from "../components/Footer";
 import Mainheader from "../components/Mainheader";
 import Navbar from "../components/Navbar";
@@ -22,7 +22,7 @@ export default function Home() {
           <div className="w-full lg:flex sm:flex-row justify-center items-center mx-auto xl:mt-10 sm:mt-56">
             <div className="w-1/2 lg:flex-row  sm:w-3/4 sm:mx-auto">
               <Slider />
-              <FacebookData />
+              <HomeFBData />
             </div>
 
             <div className="xl:w-1/2 xl:mb-36 sm:w-full sm:mx-auto ">

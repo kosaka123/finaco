@@ -17,12 +17,12 @@ function contact() {
       <Navbar />
 
       <div className="w-full flex justify-center">
-        <div className="w-4/5  absolute z-40 sm:grid sm:grid-cols-1 xl:mt-14 sm:mt-5 bg-white border-white rounded-lg  shadow-xl">
+        <div className="w-4/5  absolute z-40 sm:grid sm:grid-cols-1 xl:mt-8 sm:mt-5 bg-white border-white rounded-lg  shadow-xl">
           <div
             className="w-full h-[250px] rounded-t-lg opacity-80 bg-cover flex justify-center"
             style={{ backgroundImage: "url(get.jpg)" }}
           >
-            <div className="w-3/5 h-4/5 bg-white lg:mt-6 bg-opacity-50 rounded-lg">
+            <div className=" w-4/6 h-4/5 bg-white lg:mt-6 bg-opacity-50 rounded-lg sm:mt-6">
               <div className="flex justify-center lg:mt-5 sm:mt-8">
                 <h1 className="lg:text-6xl  sm:text-5xl font-bold text-center text-green-700   ">
                   Get In Touch!
@@ -48,7 +48,7 @@ function contact() {
               </div>
 
               {/*information */}
-              <div className=" flex h-full xl:w-2/5  sm:w-full lg:justify-start lg:items-center sm:justify-center sm:mt-3 sm:h-[600px]">
+              <div className=" flex h-full xl:w-2/5   lg:justify-start lg:items-center sm:w-full sm:justify-center sm:mt-3 sm:h-[600px]">
                 <div className="w-4/5  h-full sm:grid sm:grid-cols-1">
                   <div className="w-full  h-1/2  border-white border-8 ">
                     <div className="flex justify-center items-center mt-8 w-full  text-gray-600 dark:text-gray-400">
@@ -83,16 +83,16 @@ function contact() {
         </div>
       </div>
 
-      <div className="w-full lg:h-1/2 sm:h-[1500px] relative">
+      <div className="w-full lg:h-full sm:h-[1500px] relative">
         <div className="w-full h-full">
           <img
             alt="conta"
             src="conta.jpg"
-            className="w-full lg:h-full sm:h-[1500px] opacity-80"
+            className="w-full lg:h-[940px] sm:h-[1500px] opacity-80"
           />
         </div>
       </div>
-      <div className="w-full h-full lg:mt-0 ">
+      <div className="w-full h-full lg:mb-0 sm:mb-10">
         <Footer />
       </div>
     </div>
