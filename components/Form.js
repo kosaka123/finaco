@@ -87,13 +87,13 @@ function Form() {
   };
 
   return (
-    <div className="w-3/4 ">
+    <div className="w-full">
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
+        className=" flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
       >
-        <h1 className="text-2xl font-bold dark:text-gray-50">意見信箱</h1>
+        <h1 className="text-4xl font-bold  dark:text-gray-50">請給些意見</h1>
 
         {/*FullName */}
         <label
